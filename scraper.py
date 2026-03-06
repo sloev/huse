@@ -58,9 +58,23 @@ def calculate_commute(house_coords):
     bike_direct = (dist_direct / BIKE_SPEED) * 60
     
     if walk_direct <= MAX_COMMUTE_WALK_BIKE and walk_direct <= MAX_TOTAL_MINUTES:
-        return {"mode": "Walking", "duration": int(walk_direct), "line": "Direct"}
+        return {
+            "mode": "Walking", 
+            "duration": int(walk_direct), 
+            "line": "Direct",
+            "path": [
+                {"type": "WALK", "from": house_coords, "to": DESTINATION_COORDS}
+            ]
+        }
     if bike_direct <= MAX_COMMUTE_WALK_BIKE and bike_direct <= MAX_TOTAL_MINUTES:
-        return {"mode": "Biking", "duration": int(bike_direct), "line": "Direct"}
+        return {
+            "mode": "Biking", 
+            "duration": int(bike_direct), 
+            "line": "Direct",
+            "path": [
+                {"type": "BIKE", "from": house_coords, "to": DESTINATION_COORDS}
+            ]
+        }
     
     # 2. Bus travel
     best_commute = None
@@ -76,14 +90,30 @@ def calculate_commute(house_coords):
             tw = walk_to_stop + stop['bus_time']
             if tw <= MAX_TOTAL_MINUTES:
                 if not best_commute or tw < best_commute['duration']:
-                    best_commute = {"mode": "Walk + Bus", "duration": int(tw), "line": f"800A via {stop['name']}"}
+                    best_commute = {
+                        "mode": "Walk + Bus", 
+                        "duration": int(tw), 
+                        "line": f"800A via {stop['name']}",
+                        "path": [
+                            {"type": "WALK", "from": house_coords, "to": stop['coords']},
+                            {"type": "BUS", "from": stop['coords'], "to": DESTINATION_COORDS}
+                        ]
+                    }
         
         # Bike to stop
         if bike_to_stop <= MAX_COMMUTE_WALK_BIKE:
             tb = bike_to_stop + stop['bus_time']
             if tb <= MAX_TOTAL_MINUTES:
                 if not best_commute or tb < best_commute['duration']:
-                    best_commute = {"mode": "Bike + Bus", "duration": int(tb), "line": f"800A via {stop['name']}"}
+                    best_commute = {
+                        "mode": "Bike + Bus", 
+                        "duration": int(tb), 
+                        "line": f"800A via {stop['name']}",
+                        "path": [
+                            {"type": "BIKE", "from": house_coords, "to": stop['coords']},
+                            {"type": "BUS", "from": stop['coords'], "to": DESTINATION_COORDS}
+                        ]
+                    }
                 
     return best_commute
 

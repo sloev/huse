@@ -18,6 +18,64 @@
     <script type="text/babel">
         const { useState, useEffect } = React;
 
+        const RouteMap = ({ path }) => {
+            if (!path) return null;
+            
+            // Simplified relative mapping for the small SVG
+            // We'll calculate a bounding box for the path
+            const allCoords = path.flatMap(p => [p.from, p.to]);
+            const lons = allCoords.map(c => c[0]);
+            const lats = allCoords.map(c => c[1]);
+            const minLon = Math.min(...lons);
+            const maxLon = Math.max(...lons);
+            const minLat = Math.min(...lats);
+            const maxLat = Math.max(...lats);
+            
+            const padding = 0.005; // degree padding
+            const mapMinLon = minLon - padding;
+            const mapMaxLon = maxLon + padding;
+            const mapMinLat = minLat - padding;
+            const mapMaxLat = maxLat + padding;
+            
+            const scaleX = (lon) => ((lon - mapMinLon) / (mapMaxLon - mapMinLon)) * 100;
+            const scaleY = (lat) => (1 - (lat - mapMinLat) / (mapMaxLat - mapMinLat)) * 100; // Invert Y for SVG
+
+            return (
+                <div className="h-24 w-full bg-slate-50 rounded border border-slate-100 overflow-hidden mb-4 relative">
+                    <svg viewBox="0 0 100 100" className="w-full h-full">
+                        {path.map((segment, i) => {
+                            const x1 = scaleX(segment.from[0]);
+                            const y1 = scaleY(segment.from[1]);
+                            const x2 = scaleX(segment.to[0]);
+                            const y2 = scaleY(segment.to[1]);
+                            
+                            const color = segment.type === 'WALK' ? '#22c55e' : 
+                                          segment.type === 'BIKE' ? '#f97316' : '#3b82f6';
+                            
+                            return (
+                                <g key={i}>
+                                    <line 
+                                        x1={x1} y1={y1} x2={x2} y2={y2} 
+                                        stroke={color} 
+                                        strokeWidth="3" 
+                                        strokeLinecap="round"
+                                        strokeDasharray={segment.type === 'BUS' ? "0" : "1 4"}
+                                    />
+                                    {i === 0 && <circle cx={x1} cy={y1} r="3" fill="#ef4444" />} {/* Start/House */}
+                                    {i === path.length - 1 && <circle cx={x2} cy={y2} r="3" fill="#1e293b" />} {/* End/Dest */}
+                                </g>
+                            );
+                        })}
+                    </svg>
+                    <div className="absolute bottom-1 right-1 flex gap-2 text-[8px] uppercase font-bold text-gray-400">
+                        <span className="flex items-center gap-0.5"><span className="w-1.5 h-1.5 rounded-full bg-green-500"></span> Gå</span>
+                        <span className="flex items-center gap-0.5"><span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span> Cykel</span>
+                        <span className="flex items-center gap-0.5"><span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Bus</span>
+                    </div>
+                </div>
+            );
+        };
+
         const HouseCard = ({ house }) => {
             const [viewed, setViewed] = useState(false);
 
@@ -75,6 +133,8 @@
                         <div className="flex items-center text-xs text-gray-500 mb-4 bg-gray-50 p-2 rounded">
                             <span>{house.commute.mode}: {house.commute.line}</span>
                         </div>
+
+                        <RouteMap path={house.commute.path} />
 
                         <a 
                             href={house.link} 

@@ -11,7 +11,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 16,
-      "line": "800A via Hvidkilde"
+      "line": "800A via Hvidkilde",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.57911,
+            55.06772
+          ],
+          "to": [
+            10.535,
+            55.074
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.535,
+            55.074
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2014/2014025.jpg",
     "isForeclosure": false
@@ -28,7 +52,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 11,
-      "line": "800A via Vester Skerninge"
+      "line": "800A via Vester Skerninge",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.43057,
+            55.07831
+          ],
+          "to": [
+            10.457,
+            55.074
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.457,
+            55.074
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2283/2283316.jpg",
     "isForeclosure": false
@@ -45,7 +93,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 19,
-      "line": "800A via Vester Skerninge"
+      "line": "800A via Vester Skerninge",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.43206,
+            55.10257
+          ],
+          "to": [
+            10.457,
+            55.074
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.457,
+            55.074
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2289/2289046.jpg",
     "isForeclosure": false
@@ -62,7 +134,20 @@
     "commute": {
       "mode": "Walking",
       "duration": 5,
-      "line": "Direct"
+      "line": "Direct",
+      "path": [
+        {
+          "type": "WALK",
+          "from": [
+            10.49675,
+            55.07091
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2238/2238166.jpg",
     "isForeclosure": false
@@ -79,7 +164,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 18,
-      "line": "800A via Vester Skerninge"
+      "line": "800A via Vester Skerninge",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.43128,
+            55.10079
+          ],
+          "to": [
+            10.457,
+            55.074
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.457,
+            55.074
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2271/2271966.jpg",
     "isForeclosure": false
@@ -96,7 +205,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 22,
-      "line": "800A via Skårup"
+      "line": "800A via Skårup",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.69436,
+            55.09083
+          ],
+          "to": [
+            10.686,
+            55.093
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.686,
+            55.093
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2275/2275281.jpg",
     "isForeclosure": false
@@ -113,7 +246,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 28,
-      "line": "800A via Vejstrup"
+      "line": "800A via Vejstrup",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.71312,
+            55.10835
+          ],
+          "to": [
+            10.707,
+            55.101
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.707,
+            55.101
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2121/2121685.jpg",
     "isForeclosure": false
@@ -130,7 +287,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 30,
-      "line": "800A via Skårup"
+      "line": "800A via Skårup",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.66144,
+            55.11312
+          ],
+          "to": [
+            10.686,
+            55.093
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.686,
+            55.093
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2009/2009050.jpg",
     "isForeclosure": false
@@ -147,7 +328,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 34,
-      "line": "800A via Oure"
+      "line": "800A via Oure",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.72642,
+            55.11987
+          ],
+          "to": [
+            10.709,
+            55.123
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.709,
+            55.123
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2306/2306539.jpg",
     "isForeclosure": false
@@ -164,7 +369,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 37,
-      "line": "800A via Vejstrup"
+      "line": "800A via Vejstrup",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.74298,
+            55.12109
+          ],
+          "to": [
+            10.707,
+            55.101
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.707,
+            55.101
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2304/2304160.jpg",
     "isForeclosure": false
@@ -181,7 +410,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 34,
-      "line": "800A via Oure"
+      "line": "800A via Oure",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.69567,
+            55.12796
+          ],
+          "to": [
+            10.709,
+            55.123
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.709,
+            55.123
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2276/2276227.jpg",
     "isForeclosure": false
@@ -198,7 +451,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 35,
-      "line": "800A via Gudme"
+      "line": "800A via Gudme",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.70732,
+            55.14884
+          ],
+          "to": [
+            10.704,
+            55.148
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.704,
+            55.148
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/1957/1957390.jpg",
     "isForeclosure": false
@@ -215,7 +492,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 39,
-      "line": "800A via Oure"
+      "line": "800A via Oure",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.68622,
+            55.13912
+          ],
+          "to": [
+            10.709,
+            55.123
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.709,
+            55.123
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2123/2123341.jpg",
     "isForeclosure": false
@@ -232,7 +533,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 36,
-      "line": "800A via Gudme"
+      "line": "800A via Gudme",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.7083,
+            55.1489
+          ],
+          "to": [
+            10.704,
+            55.148
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.704,
+            55.148
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2289/2289965.jpg",
     "isForeclosure": false
@@ -249,7 +574,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 37,
-      "line": "800A via Gudme"
+      "line": "800A via Gudme",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.70445,
+            55.1536
+          ],
+          "to": [
+            10.704,
+            55.148
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.704,
+            55.148
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2163/2163532.jpg",
     "isForeclosure": false
@@ -266,7 +615,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 36,
-      "line": "800A via Oure"
+      "line": "800A via Oure",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.70144,
+            55.13803
+          ],
+          "to": [
+            10.709,
+            55.123
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.709,
+            55.123
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2298/2298900.jpg",
     "isForeclosure": false
@@ -283,7 +656,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 37,
-      "line": "800A via Gudme"
+      "line": "800A via Gudme",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.70493,
+            55.15292
+          ],
+          "to": [
+            10.704,
+            55.148
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.704,
+            55.148
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2242/2242064.jpg",
     "isForeclosure": false
@@ -300,7 +697,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 37,
-      "line": "800A via Gudme"
+      "line": "800A via Gudme",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.7058,
+            55.15276
+          ],
+          "to": [
+            10.704,
+            55.148
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.704,
+            55.148
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2203/2203316.jpg",
     "isForeclosure": false
@@ -317,7 +738,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 37,
-      "line": "800A via Gudme"
+      "line": "800A via Gudme",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.70332,
+            55.15262
+          ],
+          "to": [
+            10.704,
+            55.148
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.704,
+            55.148
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2173/2173907.jpg",
     "isForeclosure": false
@@ -334,7 +779,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 31,
-      "line": "800A via Faaborg Plads"
+      "line": "800A via Faaborg Plads",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.24158,
+            55.09497
+          ],
+          "to": [
+            10.244,
+            55.097
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.244,
+            55.097
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2304/2304384.jpg",
     "isForeclosure": true
@@ -351,7 +820,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 21,
-      "line": "800A via Ulbølle"
+      "line": "800A via Ulbølle",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.3777,
+            55.08284
+          ],
+          "to": [
+            10.422,
+            55.075
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.422,
+            55.075
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2183/2183216.jpg",
     "isForeclosure": false
@@ -368,7 +861,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 39,
-      "line": "800A via Faaborg Plads"
+      "line": "800A via Faaborg Plads",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.24753,
+            55.11876
+          ],
+          "to": [
+            10.244,
+            55.097
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.244,
+            55.097
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2191/2191703.jpg",
     "isForeclosure": false
@@ -385,7 +902,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 22,
-      "line": "800A via Ulbølle"
+      "line": "800A via Ulbølle",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.37501,
+            55.08261
+          ],
+          "to": [
+            10.422,
+            55.075
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.422,
+            55.075
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2292/2292239.jpg",
     "isForeclosure": false
@@ -402,7 +943,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 37,
-      "line": "800A via Faaborg Plads"
+      "line": "800A via Faaborg Plads",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.26828,
+            55.08681
+          ],
+          "to": [
+            10.244,
+            55.097
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.244,
+            55.097
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2281/2281657.jpg",
     "isForeclosure": false
@@ -419,7 +984,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 22,
-      "line": "800A via Ulbølle"
+      "line": "800A via Ulbølle",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.37488,
+            55.08618
+          ],
+          "to": [
+            10.422,
+            55.075
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.422,
+            55.075
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2182/2182573.jpg",
     "isForeclosure": false
@@ -436,7 +1025,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 21,
-      "line": "800A via Ulbølle"
+      "line": "800A via Ulbølle",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.37966,
+            55.08514
+          ],
+          "to": [
+            10.422,
+            55.075
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.422,
+            55.075
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2194/2194038.jpg",
     "isForeclosure": false
@@ -453,7 +1066,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 22,
-      "line": "800A via Ulbølle"
+      "line": "800A via Ulbølle",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.37759,
+            55.08705
+          ],
+          "to": [
+            10.422,
+            55.075
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.422,
+            55.075
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2202/2202865.jpg",
     "isForeclosure": false
@@ -470,7 +1107,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 31,
-      "line": "800A via Faaborg Plads"
+      "line": "800A via Faaborg Plads",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.23668,
+            55.09795
+          ],
+          "to": [
+            10.244,
+            55.097
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.244,
+            55.097
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2224/2224737.jpg",
     "isForeclosure": false
@@ -487,7 +1148,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 21,
-      "line": "800A via Ulbølle"
+      "line": "800A via Ulbølle",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.37904,
+            55.08198
+          ],
+          "to": [
+            10.422,
+            55.075
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.422,
+            55.075
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2267/2267926.jpg",
     "isForeclosure": false
@@ -504,7 +1189,31 @@
     "commute": {
       "mode": "Bike + Bus",
       "duration": 37,
-      "line": "800A via Faaborg Plads"
+      "line": "800A via Faaborg Plads",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.26849,
+            55.08678
+          ],
+          "to": [
+            10.244,
+            55.097
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.244,
+            55.097
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
     },
     "image": "https://i.boliga.org/dk/550x/2289/2289548.jpg",
     "isForeclosure": false
