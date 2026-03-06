@@ -8,9 +8,9 @@ from datetime import datetime
 # Configuration
 DESTINATION_COORDS = (10.50257979, 55.06919914) # Ollerup Bytorv 4
 DESTINATION_NAME = "Ollerup Bytorv 4"
-MAX_BUS_MINUTES = 35
+MAX_BUS_MINUTES = 40
 MAX_COMMUTE_WALK_BIKE = 15 # Max mins spent on bike/walk to/from bus or destination
-MAX_TOTAL_MINUTES = 35 
+MAX_TOTAL_MINUTES = 40 
 MAX_PRICE = 900000
 MIN_ROOMS = 3
 

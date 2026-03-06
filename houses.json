@@ -153,6 +153,23 @@
     "isForeclosure": false
   },
   {
+    "id": 2304160,
+    "address": "Tanghavevej 31 , 5883 Oure",
+    "price": 850000,
+    "size": 163,
+    "rooms": 5.0,
+    "lotSize": 553,
+    "energyRating": "C",
+    "link": "https://www.boliga.dk/bolig/2304160",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 37,
+      "line": "800A via Vejstrup"
+    },
+    "image": "https://i.boliga.org/dk/550x/2304/2304160.jpg",
+    "isForeclosure": false
+  },
+  {
     "id": 2276227,
     "address": "Sognevej 45 , 5883 Oure",
     "price": 895000,
@@ -167,6 +184,142 @@
       "line": "800A via Oure"
     },
     "image": "https://i.boliga.org/dk/550x/2276/2276227.jpg",
+    "isForeclosure": false
+  },
+  {
+    "id": 1957390,
+    "address": "Lindevej 9 , 5884 Gudme",
+    "price": 495000,
+    "size": 130,
+    "rooms": 5.0,
+    "lotSize": 689,
+    "energyRating": "E",
+    "link": "https://www.boliga.dk/bolig/1957390",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 35,
+      "line": "800A via Gudme"
+    },
+    "image": "https://i.boliga.org/dk/550x/1957/1957390.jpg",
+    "isForeclosure": false
+  },
+  {
+    "id": 2123341,
+    "address": "Husmandsalleen 14 , 5884 Gudme",
+    "price": 495000,
+    "size": 114,
+    "rooms": 3.0,
+    "lotSize": 1181,
+    "energyRating": "F",
+    "link": "https://www.boliga.dk/bolig/2123341",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 39,
+      "line": "800A via Oure"
+    },
+    "image": "https://i.boliga.org/dk/550x/2123/2123341.jpg",
+    "isForeclosure": false
+  },
+  {
+    "id": 2289965,
+    "address": "Lindevej 1 , 5884 Gudme",
+    "price": 695000,
+    "size": 75,
+    "rooms": 4.0,
+    "lotSize": 694,
+    "energyRating": "E",
+    "link": "https://www.boliga.dk/bolig/2289965",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 36,
+      "line": "800A via Gudme"
+    },
+    "image": "https://i.boliga.org/dk/550x/2289/2289965.jpg",
+    "isForeclosure": false
+  },
+  {
+    "id": 2163532,
+    "address": "Vestergade 6 , 5884 Gudme",
+    "price": 700000,
+    "size": 174,
+    "rooms": 7.0,
+    "lotSize": 1148,
+    "energyRating": "f",
+    "link": "https://www.boliga.dk/bolig/2163532",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 37,
+      "line": "800A via Gudme"
+    },
+    "image": "https://i.boliga.org/dk/550x/2163/2163532.jpg",
+    "isForeclosure": false
+  },
+  {
+    "id": 2298900,
+    "address": "Sognevej 21 , 5884 Gudme",
+    "price": 795000,
+    "size": 112,
+    "rooms": 4.0,
+    "lotSize": 996,
+    "energyRating": "D",
+    "link": "https://www.boliga.dk/bolig/2298900",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 36,
+      "line": "800A via Oure"
+    },
+    "image": "https://i.boliga.org/dk/550x/2298/2298900.jpg",
+    "isForeclosure": false
+  },
+  {
+    "id": 2242064,
+    "address": "Søndergade 1 , 5884 Gudme",
+    "price": 865000,
+    "size": 178,
+    "rooms": 6.0,
+    "lotSize": 229,
+    "energyRating": "D",
+    "link": "https://www.boliga.dk/bolig/2242064",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 37,
+      "line": "800A via Gudme"
+    },
+    "image": "https://i.boliga.org/dk/550x/2242/2242064.jpg",
+    "isForeclosure": false
+  },
+  {
+    "id": 2203316,
+    "address": "Kirkegade 5 , 5884 Gudme",
+    "price": 885000,
+    "size": 123,
+    "rooms": 4.0,
+    "lotSize": 985,
+    "energyRating": "E",
+    "link": "https://www.boliga.dk/bolig/2203316",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 37,
+      "line": "800A via Gudme"
+    },
+    "image": "https://i.boliga.org/dk/550x/2203/2203316.jpg",
+    "isForeclosure": false
+  },
+  {
+    "id": 2173907,
+    "address": "Stationsvej 8 , 5884 Gudme",
+    "price": 895000,
+    "size": 153,
+    "rooms": 6.0,
+    "lotSize": 773,
+    "energyRating": "d",
+    "link": "https://www.boliga.dk/bolig/2173907",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 37,
+      "line": "800A via Gudme"
+    },
+    "image": "https://i.boliga.org/dk/550x/2173/2173907.jpg",
     "isForeclosure": false
   },
   {
@@ -204,6 +357,23 @@
     "isForeclosure": false
   },
   {
+    "id": 2191703,
+    "address": "Rallebæksgyden 5 , 5600 Faaborg",
+    "price": 695000,
+    "size": 100,
+    "rooms": 3.0,
+    "lotSize": 1000,
+    "energyRating": "F",
+    "link": "https://www.boliga.dk/bolig/2191703",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 39,
+      "line": "800A via Faaborg Plads"
+    },
+    "image": "https://i.boliga.org/dk/550x/2191/2191703.jpg",
+    "isForeclosure": false
+  },
+  {
     "id": 2292239,
     "address": "Munkeparken 39, Vester Åby , 5600 Faaborg",
     "price": 695000,
@@ -218,6 +388,23 @@
       "line": "800A via Ulbølle"
     },
     "image": "https://i.boliga.org/dk/550x/2292/2292239.jpg",
+    "isForeclosure": false
+  },
+  {
+    "id": 2281657,
+    "address": "Brevikvej 13 , 5600 Faaborg",
+    "price": 795000,
+    "size": 102,
+    "rooms": 3.0,
+    "lotSize": 774,
+    "energyRating": "E",
+    "link": "https://www.boliga.dk/bolig/2281657",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 37,
+      "line": "800A via Faaborg Plads"
+    },
+    "image": "https://i.boliga.org/dk/550x/2281/2281657.jpg",
     "isForeclosure": false
   },
   {
@@ -303,6 +490,23 @@
       "line": "800A via Ulbølle"
     },
     "image": "https://i.boliga.org/dk/550x/2267/2267926.jpg",
+    "isForeclosure": false
+  },
+  {
+    "id": 2289548,
+    "address": "Brevikvej 11, Faaborg , 5600 Faaborg",
+    "price": 895000,
+    "size": 123,
+    "rooms": 4.0,
+    "lotSize": 806,
+    "energyRating": "D",
+    "link": "https://www.boliga.dk/bolig/2289548",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 37,
+      "line": "800A via Faaborg Plads"
+    },
+    "image": "https://i.boliga.org/dk/550x/2289/2289548.jpg",
     "isForeclosure": false
   }
 ]
