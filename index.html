@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydfyn House Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body { background-color: #f8fafc; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        const HouseCard = ({ house }) => (
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
+                <div className="h-48 overflow-hidden bg-gray-200">
+                    <img 
+                        src={house.image} 
+                        alt={house.address} 
+                        className="w-full h-full object-cover"
+                        onError={(e) => { e.target.src = 'https://via.placeholder.com/400x300?text=No+Image'; }}
+                    />
+                </div>
+                <div className="p-4 flex-grow relative">
+                    {house.isForeclosure && (
+                        <div className="absolute -top-6 right-2 bg-red-600 text-white text-[10px] font-black px-2 py-1 rounded shadow-lg uppercase tracking-wider z-10 border border-white">
+                            Tvangsauktion
+                        </div>
+                    )}
+                    <div className="flex justify-between items-start mb-2">
+                        <h3 className="text-lg font-bold text-gray-800 leading-tight">{house.address}</h3>
+                        <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded shrink-0 ml-2">
+                            {house.price?.toLocaleString()} DKK
+                        </span>
+                    </div>
+                    
+                    <div className="grid grid-cols-2 gap-2 text-sm text-gray-600 mb-4">
+                        <div>🏠 {house.size} m² ({house.rooms} rm)</div>
+                        <div>🌳 {house.lotSize} m² lot</div>
+                        <div>⚡ Energy: {house.energyRating || 'N/A'}</div>
+                        <div className="font-bold text-green-600">🕒 {house.commute.duration} mins</div>
+                    </div>
+
+                    <div className="flex items-center text-xs text-gray-500 mb-4 bg-gray-50 p-2 rounded">
+                        <span>{house.commute.mode}: {house.commute.line}</span>
+                    </div>
+
+                    <a 
+                        href={house.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors"
+                    >
+                        View Listing
+                    </a>
+                </div>
+            </div>
+        );
+
+        const App = () => {
+            const [houses, setHouses] = useState([]);
+            const [loading, setLoading] = useState(true);
+            const [filter, setFilter] = useState('');
+
+            useEffect(() => {
+                fetch('houses.json')
+                    .then(res => res.json())
+                    .then(data => {
+                        setHouses(data);
+                        setLoading(false);
+                    })
+                    .catch(err => {
+                        console.error("Error loading houses:", err);
+                        setLoading(false);
+                    });
+            }, []);
+
+            const filteredHouses = houses.filter(h => 
+                h.address.toLowerCase().includes(filter.toLowerCase())
+            );
+
+            if (loading) return (
+                <div className="flex justify-center items-center h-screen">
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+                </div>
+            );
+
+            return (
+                <div className="max-w-6xl mx-auto px-4 py-8">
+                    <header className="mb-8">
+                        <h1 className="text-3xl font-bold text-gray-900 mb-2">Sydfyn House Finder</h1>
+                        <p className="text-gray-600">Houses within 40 mins bus commute to Ollerup Bytorv 4</p>
+                    </header>
+
+                    <div className="mb-6">
+                        <input 
+                            type="text" 
+                            placeholder="Filter by address..." 
+                            className="w-full max-w-md px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+                            value={filter}
+                            onChange={(e) => setFilter(e.target.value)}
+                        />
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {filteredHouses.map(house => (
+                            <HouseCard key={house.id} house={house} />
+                        ))}
+                    </div>
+
+                    {filteredHouses.length === 0 && (
+                        <div className="text-center py-12">
+                            <p className="text-gray-500 text-xl">No houses found matching your criteria.</p>
+                        </div>
+                    )}
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
