@@ -18,51 +18,77 @@
     <script type="text/babel">
         const { useState, useEffect } = React;
 
-        const HouseCard = ({ house }) => (
-            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-                <div className="h-48 overflow-hidden bg-gray-200">
-                    <img 
-                        src={house.image} 
-                        alt={house.address} 
-                        className="w-full h-full object-cover"
-                        onError={(e) => { e.target.src = 'https://via.placeholder.com/400x300?text=No+Image'; }}
-                    />
-                </div>
-                <div className="p-4 flex-grow relative">
-                    {house.isForeclosure && (
-                        <div className="absolute -top-6 right-2 bg-red-600 text-white text-[10px] font-black px-2 py-1 rounded shadow-lg uppercase tracking-wider z-10 border border-white">
-                            Tvangsauktion
+        const HouseCard = ({ house }) => {
+            const [viewed, setViewed] = useState(false);
+
+            useEffect(() => {
+                const viewedList = JSON.parse(localStorage.getItem('viewedHouses') || '[]');
+                if (viewedList.includes(house.id)) {
+                    setViewed(true);
+                }
+            }, [house.id]);
+
+            const markViewed = () => {
+                const viewedList = JSON.parse(localStorage.getItem('viewedHouses') || '[]');
+                if (!viewedList.includes(house.id)) {
+                    viewedList.push(house.id);
+                    localStorage.setItem('viewedHouses', JSON.stringify(viewedList));
+                    setViewed(true);
+                }
+            };
+
+            return (
+                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col relative">
+                    {!viewed && (
+                        <div className="absolute top-2 left-2 bg-yellow-400 text-yellow-900 text-[10px] font-bold px-2 py-1 rounded shadow z-20 uppercase tracking-tighter">
+                            NY
                         </div>
                     )}
-                    <div className="flex justify-between items-start mb-2">
-                        <h3 className="text-lg font-bold text-gray-800 leading-tight">{house.address}</h3>
-                        <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded shrink-0 ml-2">
-                            {house.price?.toLocaleString()} DKK
-                        </span>
+                    <div className="h-48 overflow-hidden bg-gray-200">
+                        <img 
+                            src={house.image} 
+                            alt={house.address} 
+                            className="w-full h-full object-cover"
+                            onError={(e) => { e.target.src = 'https://via.placeholder.com/400x300?text=No+Image'; }}
+                        />
                     </div>
-                    
-                    <div className="grid grid-cols-2 gap-2 text-sm text-gray-600 mb-4">
-                        <div>🏠 {house.size} m² ({house.rooms} rm)</div>
-                        <div>🌳 {house.lotSize} m² lot</div>
-                        <div>⚡ Energy: {house.energyRating || 'N/A'}</div>
-                        <div className="font-bold text-green-600">🕒 {house.commute.duration} mins</div>
-                    </div>
+                    <div className="p-4 flex-grow relative">
+                        {house.isForeclosure && (
+                            <div className="absolute -top-6 right-2 bg-red-600 text-white text-[10px] font-black px-2 py-1 rounded shadow-lg uppercase tracking-wider z-10 border border-white">
+                                Tvangsauktion
+                            </div>
+                        )}
+                        <div className="flex justify-between items-start mb-2">
+                            <h3 className="text-lg font-bold text-gray-800 leading-tight">{house.address}</h3>
+                            <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded shrink-0 ml-2">
+                                {house.price?.toLocaleString()} DKK
+                            </span>
+                        </div>
+                        
+                        <div className="grid grid-cols-2 gap-2 text-sm text-gray-600 mb-4">
+                            <div>🏠 {house.size} m² ({house.rooms} rm)</div>
+                            <div>🌳 {house.lotSize} m² lot</div>
+                            <div>⚡ Energy: {house.energyRating || 'N/A'}</div>
+                            <div className="font-bold text-green-600">🕒 {house.commute.duration} mins</div>
+                        </div>
 
-                    <div className="flex items-center text-xs text-gray-500 mb-4 bg-gray-50 p-2 rounded">
-                        <span>{house.commute.mode}: {house.commute.line}</span>
-                    </div>
+                        <div className="flex items-center text-xs text-gray-500 mb-4 bg-gray-50 p-2 rounded">
+                            <span>{house.commute.mode}: {house.commute.line}</span>
+                        </div>
 
-                    <a 
-                        href={house.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors"
-                    >
-                        View Listing
-                    </a>
+                        <a 
+                            href={house.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            onClick={markViewed}
+                            className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors"
+                        >
+                            View Listing
+                        </a>
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        };
 
         const App = () => {
             const [houses, setHouses] = useState([]);
