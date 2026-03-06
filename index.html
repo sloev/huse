@@ -118,18 +118,27 @@
                         )}
                         <div className="flex justify-between items-start mb-2">
                             <h3 className="text-lg font-bold text-gray-800 leading-tight">{house.address}</h3>
-                            <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded shrink-0 ml-2">
-                                {house.price?.toLocaleString()} DKK
-                            </span>
-                        </div>
-                        
-                        <div className="grid grid-cols-2 gap-2 text-sm text-gray-600 mb-4">
-                            <div>🏠 {house.size} m² ({house.rooms} rm)</div>
-                            <div>🌳 {house.lotSize} m² lot</div>
-                            <div>⚡ Energy: {house.energyRating || 'N/A'}</div>
-                            <div className="font-bold text-green-600">🕒 {house.commute.duration} mins</div>
+                            <div className="flex flex-col items-end shrink-0 ml-2">
+                                <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
+                                    {house.price?.toLocaleString()} DKK
+                                </span>
+                                {house.priceChangePercent !== 0 && (
+                                    <span className={`text-[10px] font-bold ${house.priceChangePercent < 0 ? 'text-green-600' : 'text-red-600'}`}>
+                                        {house.priceChangePercent > 0 ? '↑' : ''}{house.priceChangePercent}% ({house.priceChangeCash?.toLocaleString()} DKK)
+                                    </span>
+                                )}
+                            </div>
                         </div>
 
+                        <div className="grid grid-cols-2 gap-2 text-sm text-gray-600 mb-4">
+                            <div className="flex items-center gap-1">
+                                <span className="text-base">🏠</span> 
+                                <span>{house.size} m² / <span className="font-bold text-gray-900">{house.rooms} vær</span></span>
+                            </div>
+                            <div>🌳 {house.lotSize} m² grund</div>
+                            <div>⚡ Energi: {house.energyRating || 'N/A'}</div>
+                            <div className="font-bold text-green-600">🕒 {house.commute.duration} min</div>
+                        </div>
                         <div className="flex items-center text-xs text-gray-500 mb-4 bg-gray-50 p-2 rounded">
                             <span>{house.commute.mode}: {house.commute.line}</span>
                         </div>

@@ -38,7 +38,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2014/2014025.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -30,
+    "priceChangeCash": 0
   },
   {
     "id": 2283316,
@@ -79,7 +81,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2283/2283316.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -28,
+    "priceChangeCash": 0
   },
   {
     "id": 2289046,
@@ -120,7 +124,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2289/2289046.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   },
   {
     "id": 2238166,
@@ -150,7 +156,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2238/2238166.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   },
   {
     "id": 2271966,
@@ -191,7 +199,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2271/2271966.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -10,
+    "priceChangeCash": 0
   },
   {
     "id": 2275281,
@@ -232,7 +242,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2275/2275281.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   },
   {
     "id": 2121685,
@@ -273,7 +285,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2121/2121685.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -37,
+    "priceChangeCash": 0
   },
   {
     "id": 2009050,
@@ -314,7 +328,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2009/2009050.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -15,
+    "priceChangeCash": 0
   },
   {
     "id": 2306539,
@@ -355,7 +371,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2306/2306539.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   },
   {
     "id": 2304160,
@@ -396,7 +414,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2304/2304160.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   },
   {
     "id": 2276227,
@@ -437,7 +457,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2276/2276227.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   },
   {
     "id": 1957390,
@@ -478,7 +500,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/1957/1957390.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -32,
+    "priceChangeCash": 0
   },
   {
     "id": 2123341,
@@ -519,7 +543,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2123/2123341.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -49,
+    "priceChangeCash": 0
   },
   {
     "id": 2289965,
@@ -560,7 +586,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2289/2289965.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   },
   {
     "id": 2163532,
@@ -601,7 +629,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2163/2163532.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -13,
+    "priceChangeCash": 0
   },
   {
     "id": 2298900,
@@ -642,7 +672,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2298/2298900.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   },
   {
     "id": 2242064,
@@ -683,7 +715,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2242/2242064.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -8,
+    "priceChangeCash": 0
   },
   {
     "id": 2203316,
@@ -724,7 +758,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2203/2203316.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -11,
+    "priceChangeCash": 0
   },
   {
     "id": 2173907,
@@ -765,7 +801,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2173/2173907.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -25,
+    "priceChangeCash": 0
   },
   {
     "id": 2304384,
@@ -806,7 +844,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2304/2304384.jpg",
-    "isForeclosure": true
+    "isForeclosure": true,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   },
   {
     "id": 2183216,
@@ -847,7 +887,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2183/2183216.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -13,
+    "priceChangeCash": 0
   },
   {
     "id": 2191703,
@@ -888,7 +930,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2191/2191703.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -13,
+    "priceChangeCash": 0
   },
   {
     "id": 2292239,
@@ -929,7 +973,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2292/2292239.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   },
   {
     "id": 2281657,
@@ -970,7 +1016,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2281/2281657.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   },
   {
     "id": 2182573,
@@ -1011,7 +1059,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2182/2182573.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -8,
+    "priceChangeCash": 0
   },
   {
     "id": 2194038,
@@ -1052,7 +1102,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2194/2194038.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -18,
+    "priceChangeCash": 0
   },
   {
     "id": 2202865,
@@ -1093,7 +1145,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2202/2202865.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   },
   {
     "id": 2224737,
@@ -1134,7 +1188,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2224/2224737.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   },
   {
     "id": 2267926,
@@ -1175,7 +1231,9 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2267/2267926.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": -10,
+    "priceChangeCash": 0
   },
   {
     "id": 2289548,
@@ -1216,6 +1274,8 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2289/2289548.jpg",
-    "isForeclosure": false
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
   }
 ]

@@ -161,7 +161,9 @@ def scrape_boliga():
                         "link": f"https://www.boliga.dk/bolig/{item.get('id')}",
                         "commute": commute,
                         "image": img_url or f"https://images.boliga.dk/storage/properties/actual/{item.get('id')}/1",
-                        "isForeclosure": item.get('isForeclosure', False)
+                        "isForeclosure": item.get('isForeclosure', False),
+                        "priceChangePercent": item.get('priceChangePercentTotal', 0),
+                        "priceChangeCash": item.get('priceChangeCashTotal', 0)
                     })
                     print(f"    VALID: {addr_str} ({commute['duration']}m, {rooms} rooms)")
                 
