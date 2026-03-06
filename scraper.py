@@ -9,7 +9,10 @@ from datetime import datetime
 DESTINATION_COORDS = (10.50257979, 55.06919914) # Ollerup Bytorv 4
 DESTINATION_NAME = "Ollerup Bytorv 4"
 MAX_BUS_MINUTES = 40
-MAX_TOTAL_MINUTES = 60 
+MAX_COMMUTE_WALK_BIKE = 12 # Max mins spent on bike/walk to/from bus or destination
+MAX_TOTAL_MINUTES = 40 
+MAX_PRICE = 900000
+MIN_ROOMS = 3
 
 # Speeds in km/h
 WALK_SPEED = 5
@@ -49,15 +52,17 @@ def haversine_distance(coord1, coord2):
     return R * c
 
 def calculate_commute(house_coords):
+    # 1. Direct travel
     dist_direct = haversine_distance(house_coords, DESTINATION_COORDS)
     walk_direct = (dist_direct / WALK_SPEED) * 60
     bike_direct = (dist_direct / BIKE_SPEED) * 60
     
-    if walk_direct <= 40:
+    if walk_direct <= MAX_COMMUTE_WALK_BIKE and walk_direct <= MAX_TOTAL_MINUTES:
         return {"mode": "Walking", "duration": int(walk_direct), "line": "Direct"}
-    if bike_direct <= 40:
+    if bike_direct <= MAX_COMMUTE_WALK_BIKE and bike_direct <= MAX_TOTAL_MINUTES:
         return {"mode": "Biking", "duration": int(bike_direct), "line": "Direct"}
     
+    # 2. Bus travel
     best_commute = None
     for stop in BUS_800A_STOPS:
         if stop['bus_time'] > MAX_BUS_MINUTES:
@@ -67,16 +72,18 @@ def calculate_commute(house_coords):
         bike_to_stop = (dist_to_stop / BIKE_SPEED) * 60
         
         # Walk to stop
-        tw = walk_to_stop + stop['bus_time']
-        if tw <= MAX_TOTAL_MINUTES:
-            if not best_commute or tw < best_commute['duration']:
-                best_commute = {"mode": "Walk + Bus", "duration": int(tw), "line": f"800A via {stop['name']}"}
+        if walk_to_stop <= MAX_COMMUTE_WALK_BIKE:
+            tw = walk_to_stop + stop['bus_time']
+            if tw <= MAX_TOTAL_MINUTES:
+                if not best_commute or tw < best_commute['duration']:
+                    best_commute = {"mode": "Walk + Bus", "duration": int(tw), "line": f"800A via {stop['name']}"}
         
         # Bike to stop
-        tb = bike_to_stop + stop['bus_time']
-        if tb <= MAX_TOTAL_MINUTES:
-            if not best_commute or tb < best_commute['duration']:
-                best_commute = {"mode": "Bike + Bus", "duration": int(tb), "line": f"800A via {stop['name']}"}
+        if bike_to_stop <= MAX_COMMUTE_WALK_BIKE:
+            tb = bike_to_stop + stop['bus_time']
+            if tb <= MAX_TOTAL_MINUTES:
+                if not best_commute or tb < best_commute['duration']:
+                    best_commute = {"mode": "Bike + Bus", "duration": int(tb), "line": f"800A via {stop['name']}"}
                 
     return best_commute
 
@@ -86,13 +93,17 @@ def scrape_boliga():
     
     for zip_code in POSTAL_CODES:
         print(f"Scraping ZIP {zip_code}...")
-        url = f"https://api.boliga.dk/api/v2/search/results?zipCodes={zip_code}&pageSize=200"
+        url = f"https://api.boliga.dk/api/v2/search/results?zipCodes={zip_code}&pageSize=200&priceMax={MAX_PRICE}"
         try:
             res = requests.get(url, headers=headers)
             results = res.json().get('results', [])
-            print(f"  Found {len(results)} items")
+            print(f"  Found {len(results)} items under {MAX_PRICE} DKK")
             
             for item in results:
+                rooms = item.get('rooms')
+                if rooms is None or rooms < MIN_ROOMS:
+                    continue
+
                 lat = item.get('latitude')
                 lon = item.get('longitude')
                 
@@ -114,7 +125,7 @@ def scrape_boliga():
                         "address": addr_str,
                         "price": item.get('price', 0),
                         "size": item.get('size', 0),
-                        "rooms": item.get('rooms', 0),
+                        "rooms": rooms,
                         "lotSize": item.get('lotSize', 0),
                         "energyRating": item.get('energyClass'),
                         "link": f"https://www.boliga.dk/bolig/{item.get('id')}",
@@ -122,7 +133,7 @@ def scrape_boliga():
                         "image": img_url or f"https://images.boliga.dk/storage/properties/actual/{item.get('id')}/1",
                         "isForeclosure": item.get('isForeclosure', False)
                     })
-                    print(f"    VALID: {addr_str} ({commute['duration']}m)")
+                    print(f"    VALID: {addr_str} ({commute['duration']}m, {rooms} rooms)")
                 
         except Exception as e:
             print(f"  Error: {e}")
