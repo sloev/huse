@@ -82,6 +82,8 @@
                     });
             }, []);
 
+            const lastUpdated = houses.length > 0 ? new Date().toLocaleDateString('da-DK', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+
             const filteredHouses = houses.filter(h => 
                 h.address.toLowerCase().includes(filter.toLowerCase())
             );
@@ -94,9 +96,12 @@
 
             return (
                 <div className="max-w-6xl mx-auto px-4 py-8">
-                    <header className="mb-8">
-                        <h1 className="text-3xl font-bold text-gray-900 mb-2">Sydfyn House Finder</h1>
-                        <p className="text-gray-600">Houses within 40 mins bus commute to Ollerup Bytorv 4</p>
+                    <header className="mb-8 flex justify-between items-end">
+                        <div>
+                            <h1 className="text-3xl font-bold text-gray-900 mb-2">Sydfyn House Finder</h1>
+                            <p className="text-gray-600">Houses within 40 mins bus commute to Ollerup Bytorv 4</p>
+                        </div>
+                        {lastUpdated && <div className="text-sm text-gray-400 italic">Opdateret: {lastUpdated}</div>}
                     </header>
 
                     <div className="mb-6">
