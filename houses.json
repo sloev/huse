@@ -376,49 +376,6 @@
     "priceChangeCash": 0
   },
   {
-    "id": 2304160,
-    "address": "Tanghavevej 31 , 5883 Oure",
-    "price": 850000,
-    "size": 163,
-    "rooms": 5.0,
-    "lotSize": 553,
-    "energyRating": "C",
-    "link": "https://www.boliga.dk/bolig/2304160",
-    "commute": {
-      "mode": "Bike + Bus",
-      "duration": 37,
-      "line": "800A via Vejstrup",
-      "path": [
-        {
-          "type": "BIKE",
-          "from": [
-            10.74298,
-            55.12109
-          ],
-          "to": [
-            10.707,
-            55.101
-          ]
-        },
-        {
-          "type": "BUS",
-          "from": [
-            10.707,
-            55.101
-          ],
-          "to": [
-            10.50257979,
-            55.06919914
-          ]
-        }
-      ]
-    },
-    "image": "https://i.boliga.org/dk/550x/2304/2304160.jpg",
-    "isForeclosure": false,
-    "priceChangePercent": 0,
-    "priceChangeCash": 0
-  },
-  {
     "id": 2276227,
     "address": "Sognevej 45 , 5883 Oure",
     "price": 895000,
