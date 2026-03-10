@@ -548,6 +548,49 @@
     "priceChangeCash": 0
   },
   {
+    "id": 2307651,
+    "address": "Stubshovedvej 12 , 5884 Gudme",
+    "price": 695000,
+    "size": 182,
+    "rooms": 7.0,
+    "lotSize": 1220,
+    "energyRating": "D",
+    "link": "https://www.boliga.dk/bolig/2307651",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 38,
+      "line": "800A via Gudme",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.70296,
+            55.1561
+          ],
+          "to": [
+            10.704,
+            55.148
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.704,
+            55.148
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
+    },
+    "image": "https://i.boliga.org/dk/550x/2307/2307651.jpg",
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
+  },
+  {
     "id": 2163532,
     "address": "Vestergade 6 , 5884 Gudme",
     "price": 700000,
