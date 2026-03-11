@@ -1021,6 +1021,49 @@
     "priceChangeCash": 0
   },
   {
+    "id": 2308139,
+    "address": "Hospitalstræde 6 , 5600 Faaborg",
+    "price": 795000,
+    "size": 77,
+    "rooms": 3.0,
+    "lotSize": 61,
+    "energyRating": "C",
+    "link": "https://www.boliga.dk/bolig/2308139",
+    "commute": {
+      "mode": "Walk + Bus",
+      "duration": 30,
+      "line": "800A via Faaborg Plads",
+      "path": [
+        {
+          "type": "WALK",
+          "from": [
+            10.24421,
+            55.09657
+          ],
+          "to": [
+            10.244,
+            55.097
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.244,
+            55.097
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
+    },
+    "image": "https://i.boliga.org/dk/550x/2308/2308139.jpg",
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
+  },
+  {
     "id": 2182573,
     "address": "Svendborgvej 389 , 5600 Faaborg",
     "price": 895000,
