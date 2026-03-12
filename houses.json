@@ -511,7 +511,7 @@
     "size": 75,
     "rooms": 4.0,
     "lotSize": 694,
-    "energyRating": "E",
+    "energyRating": "-",
     "link": "https://www.boliga.dk/bolig/2289965",
     "commute": {
       "mode": "Bike + Bus",
