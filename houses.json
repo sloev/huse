@@ -335,7 +335,7 @@
   {
     "id": 2306539,
     "address": "Østervangen 53C , 5883 Oure",
-    "price": 600000,
+    "price": 550000,
     "size": 73,
     "rooms": 3.0,
     "lotSize": 0,
@@ -372,7 +372,7 @@
     },
     "image": "https://i.boliga.org/dk/550x/2306/2306539.jpg",
     "isForeclosure": false,
-    "priceChangePercent": 0,
+    "priceChangePercent": -8,
     "priceChangeCash": 0
   },
   {
@@ -502,6 +502,49 @@
     "image": "https://i.boliga.org/dk/550x/2123/2123341.jpg",
     "isForeclosure": false,
     "priceChangePercent": -49,
+    "priceChangeCash": 0
+  },
+  {
+    "id": 2309338,
+    "address": "Gl. Broholmsvej 12 , 5884 Gudme",
+    "price": 650000,
+    "size": 91,
+    "rooms": 5.0,
+    "lotSize": 560,
+    "energyRating": "E",
+    "link": "https://www.boliga.dk/bolig/2309338",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 36,
+      "line": "800A via Gudme",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.71058,
+            55.14895
+          ],
+          "to": [
+            10.704,
+            55.148
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.704,
+            55.148
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
+    },
+    "image": "https://i.boliga.org/dk/550x/2309/2309338.jpg",
+    "isForeclosure": false,
+    "priceChangePercent": 0,
     "priceChangeCash": 0
   },
   {
