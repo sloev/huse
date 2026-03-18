@@ -720,49 +720,6 @@
     "priceChangeCash": 0
   },
   {
-    "id": 2242064,
-    "address": "Søndergade 1 , 5884 Gudme",
-    "price": 865000,
-    "size": 178,
-    "rooms": 6.0,
-    "lotSize": 229,
-    "energyRating": "D",
-    "link": "https://www.boliga.dk/bolig/2242064",
-    "commute": {
-      "mode": "Bike + Bus",
-      "duration": 37,
-      "line": "800A via Gudme",
-      "path": [
-        {
-          "type": "BIKE",
-          "from": [
-            10.70493,
-            55.15292
-          ],
-          "to": [
-            10.704,
-            55.148
-          ]
-        },
-        {
-          "type": "BUS",
-          "from": [
-            10.704,
-            55.148
-          ],
-          "to": [
-            10.50257979,
-            55.06919914
-          ]
-        }
-      ]
-    },
-    "image": "https://i.boliga.org/dk/550x/2242/2242064.jpg",
-    "isForeclosure": false,
-    "priceChangePercent": -8,
-    "priceChangeCash": 0
-  },
-  {
     "id": 2203316,
     "address": "Kirkegade 5 , 5884 Gudme",
     "price": 885000,
