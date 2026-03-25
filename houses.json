@@ -291,7 +291,7 @@
   },
   {
     "id": 2009050,
-    "address": "Lundevej 20 , 5882 Vejstrup",
+    "address": "Lundevej 20, Brudager , 5882 Vejstrup",
     "price": 845000,
     "size": 142,
     "rooms": 5.0,
@@ -335,7 +335,7 @@
   {
     "id": 2306539,
     "address": "Østervangen 53C , 5883 Oure",
-    "price": 550000,
+    "price": 485000,
     "size": 73,
     "rooms": 3.0,
     "lotSize": 0,
@@ -372,7 +372,7 @@
     },
     "image": "https://i.boliga.org/dk/550x/2306/2306539.jpg",
     "isForeclosure": false,
-    "priceChangePercent": -8,
+    "priceChangePercent": -19,
     "priceChangeCash": 0
   },
   {
