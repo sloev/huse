@@ -634,6 +634,49 @@
     "priceChangeCash": 0
   },
   {
+    "id": 2314004,
+    "address": "Søndergade 1 , 5884 Gudme",
+    "price": 695000,
+    "size": 178,
+    "rooms": 6.0,
+    "lotSize": 229,
+    "energyRating": "D",
+    "link": "https://www.boliga.dk/bolig/2314004",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 37,
+      "line": "800A via Gudme",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.70493,
+            55.15292
+          ],
+          "to": [
+            10.704,
+            55.148
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.704,
+            55.148
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
+    },
+    "image": "https://i.boliga.org/dk/550x/2314/2314004.jpg",
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
+  },
+  {
     "id": 2163532,
     "address": "Vestergade 6 , 5884 Gudme",
     "price": 700000,
@@ -803,49 +846,6 @@
     "image": "https://i.boliga.org/dk/550x/2173/2173907.jpg",
     "isForeclosure": false,
     "priceChangePercent": -25,
-    "priceChangeCash": 0
-  },
-  {
-    "id": 2304384,
-    "address": "Misligholdelsesauktion - Strandgade 1 , 5600 Faaborg",
-    "price": 360960,
-    "size": 0,
-    "rooms": 5.0,
-    "lotSize": 146,
-    "energyRating": "-",
-    "link": "https://www.boliga.dk/bolig/2304384",
-    "commute": {
-      "mode": "Bike + Bus",
-      "duration": 31,
-      "line": "800A via Faaborg Plads",
-      "path": [
-        {
-          "type": "BIKE",
-          "from": [
-            10.24158,
-            55.09497
-          ],
-          "to": [
-            10.244,
-            55.097
-          ]
-        },
-        {
-          "type": "BUS",
-          "from": [
-            10.244,
-            55.097
-          ],
-          "to": [
-            10.50257979,
-            55.06919914
-          ]
-        }
-      ]
-    },
-    "image": "https://i.boliga.org/dk/550x/2304/2304384.jpg",
-    "isForeclosure": true,
-    "priceChangePercent": 0,
     "priceChangeCash": 0
   },
   {
