@@ -1107,49 +1107,6 @@
     "priceChangeCash": 0
   },
   {
-    "id": 2194038,
-    "address": "Svendborgvej 424 , 5600 Faaborg",
-    "price": 895000,
-    "size": 144,
-    "rooms": 6.0,
-    "lotSize": 995,
-    "energyRating": "E",
-    "link": "https://www.boliga.dk/bolig/2194038",
-    "commute": {
-      "mode": "Bike + Bus",
-      "duration": 21,
-      "line": "800A via Ulbølle",
-      "path": [
-        {
-          "type": "BIKE",
-          "from": [
-            10.37966,
-            55.08514
-          ],
-          "to": [
-            10.422,
-            55.075
-          ]
-        },
-        {
-          "type": "BUS",
-          "from": [
-            10.422,
-            55.075
-          ],
-          "to": [
-            10.50257979,
-            55.06919914
-          ]
-        }
-      ]
-    },
-    "image": "https://i.boliga.org/dk/550x/2194/2194038.jpg",
-    "isForeclosure": false,
-    "priceChangePercent": -18,
-    "priceChangeCash": 0
-  },
-  {
     "id": 2202865,
     "address": "Industrivej 8, Vester Aaby , 5600 Faaborg",
     "price": 895000,
