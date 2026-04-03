@@ -505,6 +505,49 @@
     "priceChangeCash": 0
   },
   {
+    "id": 2289965,
+    "address": "Lindevej 1 , 5884 Gudme",
+    "price": 595000,
+    "size": 75,
+    "rooms": 4.0,
+    "lotSize": 694,
+    "energyRating": "-",
+    "link": "https://www.boliga.dk/bolig/2289965",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 36,
+      "line": "800A via Gudme",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.7083,
+            55.1489
+          ],
+          "to": [
+            10.704,
+            55.148
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.704,
+            55.148
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
+    },
+    "image": "https://i.boliga.org/dk/550x/2289/2289965.jpg",
+    "isForeclosure": false,
+    "priceChangePercent": -14,
+    "priceChangeCash": 0
+  },
+  {
     "id": 2309338,
     "address": "Gl. Broholmsvej 12 , 5884 Gudme",
     "price": 650000,
@@ -543,49 +586,6 @@
       ]
     },
     "image": "https://i.boliga.org/dk/550x/2309/2309338.jpg",
-    "isForeclosure": false,
-    "priceChangePercent": 0,
-    "priceChangeCash": 0
-  },
-  {
-    "id": 2289965,
-    "address": "Lindevej 1 , 5884 Gudme",
-    "price": 695000,
-    "size": 75,
-    "rooms": 4.0,
-    "lotSize": 694,
-    "energyRating": "-",
-    "link": "https://www.boliga.dk/bolig/2289965",
-    "commute": {
-      "mode": "Bike + Bus",
-      "duration": 36,
-      "line": "800A via Gudme",
-      "path": [
-        {
-          "type": "BIKE",
-          "from": [
-            10.7083,
-            55.1489
-          ],
-          "to": [
-            10.704,
-            55.148
-          ]
-        },
-        {
-          "type": "BUS",
-          "from": [
-            10.704,
-            55.148
-          ],
-          "to": [
-            10.50257979,
-            55.06919914
-          ]
-        }
-      ]
-    },
-    "image": "https://i.boliga.org/dk/550x/2289/2289965.jpg",
     "isForeclosure": false,
     "priceChangePercent": 0,
     "priceChangeCash": 0
