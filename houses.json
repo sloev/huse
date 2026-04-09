@@ -333,49 +333,6 @@
     "priceChangeCash": 0
   },
   {
-    "id": 2306539,
-    "address": "Østervangen 53C , 5883 Oure",
-    "price": 485000,
-    "size": 73,
-    "rooms": 3.0,
-    "lotSize": 0,
-    "energyRating": "c",
-    "link": "https://www.boliga.dk/bolig/2306539",
-    "commute": {
-      "mode": "Bike + Bus",
-      "duration": 34,
-      "line": "800A via Oure",
-      "path": [
-        {
-          "type": "BIKE",
-          "from": [
-            10.72642,
-            55.11987
-          ],
-          "to": [
-            10.709,
-            55.123
-          ]
-        },
-        {
-          "type": "BUS",
-          "from": [
-            10.709,
-            55.123
-          ],
-          "to": [
-            10.50257979,
-            55.06919914
-          ]
-        }
-      ]
-    },
-    "image": "https://i.boliga.org/dk/550x/2306/2306539.jpg",
-    "isForeclosure": false,
-    "priceChangePercent": -19,
-    "priceChangeCash": 0
-  },
-  {
     "id": 2276227,
     "address": "Sognevej 45 , 5883 Oure",
     "price": 895000,
