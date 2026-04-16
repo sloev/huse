@@ -1021,6 +1021,49 @@
     "priceChangeCash": 0
   },
   {
+    "id": 2321316,
+    "address": "Brahesmindeparken 31 , 5600 Faaborg",
+    "price": 839000,
+    "size": 69,
+    "rooms": 3.0,
+    "lotSize": 3876,
+    "energyRating": "F",
+    "link": "https://www.boliga.dk/bolig/2321316",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 33,
+      "line": "800A via Faaborg Plads",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.23353,
+            55.10189
+          ],
+          "to": [
+            10.244,
+            55.097
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.244,
+            55.097
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
+    },
+    "image": "https://i.boliga.org/dk/550x/2321/2321316.jpg",
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
+  },
+  {
     "id": 2182573,
     "address": "Svendborgvej 389 , 5600 Faaborg",
     "price": 895000,
