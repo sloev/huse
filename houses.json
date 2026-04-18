@@ -806,6 +806,49 @@
     "priceChangeCash": 0
   },
   {
+    "id": 2322481,
+    "address": "Kirkegade 18 , 5884 Gudme",
+    "price": 895000,
+    "size": 94,
+    "rooms": 5.0,
+    "lotSize": 711,
+    "energyRating": "c",
+    "link": "https://www.boliga.dk/bolig/2322481",
+    "commute": {
+      "mode": "Bike + Bus",
+      "duration": 36,
+      "line": "800A via Gudme",
+      "path": [
+        {
+          "type": "BIKE",
+          "from": [
+            10.70758,
+            55.15133
+          ],
+          "to": [
+            10.704,
+            55.148
+          ]
+        },
+        {
+          "type": "BUS",
+          "from": [
+            10.704,
+            55.148
+          ],
+          "to": [
+            10.50257979,
+            55.06919914
+          ]
+        }
+      ]
+    },
+    "image": "https://i.boliga.org/dk/550x/2322/2322481.jpg",
+    "isForeclosure": false,
+    "priceChangePercent": 0,
+    "priceChangeCash": 0
+  },
+  {
     "id": 2183216,
     "address": "Munkeparken 9, Vester Åby , 5600 Faaborg",
     "price": 475000,
